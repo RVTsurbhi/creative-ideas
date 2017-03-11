@@ -10,6 +10,7 @@
 
      <!-- Bootstrap -->
      <link href="assets/css/bootstrap.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,23 +19,56 @@
        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
      <![endif]-->
 <style>
-#nature-image{
+<body>
+{
+  font-family: 'Carrois Gothic', sans-serif;
+}
+#nature-image
+{
   width: 100%;
 }
 
 .navbar{
   margin-bottom: 0px;
-  background-color:green;
-  border: none;
+  background-color: green;
+  border:none;
 }
 #mynavigationbar a
 {
    color:black;
+   font-size:16px;
 }
 .navbar-default a.navbar-brand
 {
   color:red;
+  font-size: 30px;
 }
+#home
+{
+  position: relative;
+}
+
+#home .container
+{
+  position: absolute;
+  top:30%;
+  width: 100%;
+}
+#home h1
+{
+  font-size:96px;
+  color: rgb(245,194,46);
+  font-family: 'Francois One', sans-serif;
+}
+#home h2
+{
+  color: rgb(243, 185, 38);
+}
+  hr
+  {
+    width:35%;
+    border: 2px solid rgb(212, 191, 118);
+  }
 
 </style>
 
@@ -57,8 +91,6 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">about us</a></li>
           <li><a href="#">what we do</a></li>
-          <li><a href="#">our famous freebies</a></li>
-          <li><a href="#">our premium UI Tools</a></li>
           <li><a href="#">what people think</a></li>
           <li><a href="#">meet our team</a></li>
           <li><a href="#">numbers don't lie</a></li>
@@ -70,6 +102,13 @@
 
     <section id="home">
       <img id="nature-image" src="assets/images/LnwF05.jpg">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">CREATIVE IDEAS</h1>
+          <hr/>
+          <h2 class="text-center">Photography Websites with a Brain</h2>
+        </div>
+      </div>
     </section>
 
     <section id="about">
