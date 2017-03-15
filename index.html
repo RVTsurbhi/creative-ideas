@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+     <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -11,6 +11,7 @@
      <!-- Bootstrap -->
      <link href="assets/css/bootstrap.css" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+     <link href="assets/css/font-awesome.css" rel="stylesheet">
 
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,13 +20,22 @@
        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
      <![endif]-->
 <style>
-<body>
+/*html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}*/
+body
 {
   font-family: 'Carrois Gothic', sans-serif;
 }
 #nature-image
 {
   width: 100%;
+  height: 100%;
 }
 
 .navbar{
@@ -46,6 +56,8 @@
 #home
 {
   position: relative;
+  height:550px;
+  margin-top:0px;
 }
 
 #home .container
@@ -64,15 +76,114 @@
 {
   color: rgb(243, 185, 38);
 }
-  hr
+  #home .under-line
   {
     width:35%;
     border: 2px solid rgb(212, 191, 118);
   }
 
+  .under-line
+  {
+    width:50%;
+    border-top: 1px solid #d8b579
+  }
+ .paragraph
+ {
+   color:#999;
+   font-size: 20px;
+   text-align:center;
+   padding:30px;
+ }
+
+  .scroll-icon
+  {
+      margin-top:90px;
+  }
+  .scroll-icon a
+  {
+    font-size:25px;
+    color: yellow;
+    border: 1px solid yellow;
+    padding: 10px 10px 5px 12px;
+    border-radius:50%;
+  }
+
+  section
+  {
+    min-width:500px;
+    margin-top:45px;
+    text-align: center;
+  }
+.horizontal
+{
+  margin-top: 70px;
+}
+.common-class
+{
+  margin-bottom: 40px;
+}
+#about img{
+  margin-bottom: 20px;
+}
+.about-team
+{
+  width:180px;
+  display: inline-block;
+  padding:10px;
+  border:2px solid #e6a9a8;
+}
+.team-heading
+{
+  margin-top:25px;
+  font-size: 15px;
+}
+
+.team-social-links a
+{
+  font-size:18px;
+  color: #1ebabb;
+  margin-right:15px;
+}
+
+.team-social-links a:hover
+{
+  color:#e44973;
+}
+#googlemap
+{
+  height:400px;
+  width: 100%;
+}
+footer{
+  background:black;
+  margin-top:15px;
+  padding: 15px;
+}
+
+.whole, .bottom li
+{
+  display: inline-block;
+}
+
+.left li a, .right li a
+{
+  color: red;
+  font-size: 14px;
+  padding: 10px;
+}
+.white
+{
+  color: blue;
+}
+footer .small
+{
+  color:white;
+  font-size: 15px;
+}
 </style>
 
 </head>
+
 
 <body>
 
@@ -87,6 +198,7 @@
         </button>
         <a class="navbar-brand" href="#">creative ideas</a>
       </div>
+
       <div class="collapse navbar-collapse" id="mynavigationbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">about us</a></li>
@@ -96,32 +208,310 @@
           <li><a href="#">numbers don't lie</a></li>
         </ul>
       </div>
-
     </div>
   </nav>
 
-    <section id="home">
+   <section id="home">
       <img id="nature-image" src="assets/images/LnwF05.jpg">
       <div class="container">
         <div class="row">
           <h1 class="text-center">CREATIVE IDEAS</h1>
-          <hr/>
+          <hr class="under-line">
           <h2 class="text-center">Photography Websites with a Brain</h2>
+          <div class="scroll-icon text-center">
+            <a href="#">
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about">
-    </section>
+      <div class="container">
+        <div class="row">
+          <div class="common-class">
+          <h1 class="heading">About Us</h1>
+          <hr class="under-line">
+          <p class="paragraph">creative Ideas, a global technology company, has created the largest and most vibrant two-sided marketplace
+             for creative professionals to license content - including images, videos and music - as well as innovative tools
+              that power the creative process.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/images/MannaHill.jpg" class="img-responsive">
+            <img src="assets/images/woman.jpg" class="img-responsive">
+          </div>
+
+          <div class="col-md-4">
+            <img src="assets/images/man.jpg" class="img-responsive">
+            <img src="assets/images/australia.jpg" class="img-responsive">
+            <img src="assets/images/livinglocal.jpg" class="img-responsive">
+          </div>
+
+
+          <div class="col-md-4">
+            <img src="assets/images/5.jpg" class="img-responsive">
+            <img src="assets/images/horse.jpg" class="img-responsive">
+            <img src="assets/images/cape-leveque3.jpg" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <section id="what we do">
+      <div class="container">
+        <div class="row">
+          <div class="common-class">
+            <h1 class="heading">What we Do</h1>
+            <hr class="under-line">
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-xs-6 text-center horizontal">
+                <i class="fa fa-picture-o fa-5x"></i>
+                <h3>Show</h3>
+                <p>Choose from our nine portfolio templates
+                   & build your site in minutes - no coding required!</p>
+              </div>
+
+              <div class="col-md-3 col-xs-6 text-center horizontal">
+                 <i class="fa fa-shopping-cart fa-5x"></i>
+                <h3>Sell</h3>
+                <p>Use our built-in shopping cart &
+                  partnerships with major print labs to earn more.</p>
+              </div>
+
+              <div class="col-md-3 col-xs-6 text-center horizontal">
+                <i class="fa fa-paper-plane-o fa-5x"></i>
+                <h3>Deliver</h3>
+                <p>Send high res files, create private galleries,
+                  and post to social media from your site.</p>
+              </div>
+
+              <div class="col-md-3 col-xs-6 text-center horizontal">
+                <i class="fa fa-folder-open fa-5x"></i>
+                <h3>Organise</h3>
+                <p>Upload your highest quality photos
+                   to create a secure and searchable online archive.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="team">
+    <!-- <section id="freebies">
+      <div class="container">
+        <div class="row">
+          <h1 class="heading">Our Famous Freebies</h1>
+          <hr class="under-line">
+
+        </div>
+      </div>
+    </section> -->
+
+    <section id="ui tools">
+      <div class="container">
+        <div class="row">
+          <h1 class="heading">Our Premium UI Tools</h1>
+          <hr class="under-line">
+
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
+    <!-- <section id="what people think">
+      <div class="container">
+        <div class="row">
+          <div class="common-class">
+             <h1 class="heading">What People Think</h1>
+             <hr class="under-line">
+          </div>
+
+          </div>
+        </div>
+    </section> -->
+
+    <section id="Team">
+      <div class="container">
+        <div class="row">
+          <div class="common-class">
+            <h1 class="heading">Meet The Team</h1>
+            <hr class="under-line">
+            <p class="text-center">A TRUSTED, EXPERIENCED TEAM<br/>
+                 Zenfolio is part of the Art.com Inc. family of brands. Together, we’re making art accessible to all by transforming the way the world discovers,
+                 personalizes, shares and purchases art. Though our team at Zenfolio has many years of experience developing web and desktop software, it’s our
+                 shared commitment to photography and delivering the premier photo website service that binds us together. That, and our daily ritual of having
+                 coffee together, just like we did in the beginning.</p>
+         </div>
+
+         <div class="container">
+           <div class="row">
+             <div class="col-md-4 col-xs-8">
+
+               <img src="http://cdn.zenfolio.net/z/company/about/arnaud-left.en-US.jpg" class="img-responsive img-circle about-team">
+               <h4 class="text-center team-heading">Arnaud<br/>GENERAL MANAGER</h4>
+               <div class="team-social-links text-center">
+                 <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                 <a href="http://google.com" target="_blank"><i class="fa fa-instagram"></i></a>
+              </div>
+
+               <img src="http://cdn.zenfolio.net/z/company/about/arnaud-left.en-US.jpg" class="img-responsive img-circle about-team">
+               <h4 class="text-center team-heading">Arnaud<br/>GENERAL MANAGER</h4>
+               <div class="team-social-links text-center">
+                 <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                 <a href="http://google.com" target="_blank"><i class="fa fa-instagram"></i></a>
+
+               </div>
+             </div>
+
+             <div class="col-md-4 col-xs-8">
+
+               <img src="http://cdn.zenfolio.net/z/company/about/Amber-left.en-US.jpg" class="img-responsive img-circle about-team">
+               <h4 class="text-center team-heading">Amber<br/>VP OF GROWTH</h4>
+               <div class="team-social-links text-center">
+                 <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                 <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+               </div>
+
+
+               <img src="http://cdn.zenfolio.net/z/company/about/briant-left.en-US.jpg" class="img-responsive img-circle about-team">
+               <h4 class="text-center team-heading">Brian<br/>DIRECTOR OF SOFTWARE DEVELOPMENT</h4>
+               <div class="team-social-links text-center">
+                  <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+               </div>
+             </div>
+
+
+            <div class="col-md-4 col-xs-8">
+
+              <img src="http://cdn.zenfolio.net/z/company/about/Nadav-left.en-US.jpg" class="img-responsive img-circle about-team">
+              <h4 class="text-center team-heading">Nadav<br/>VP OF ENGINEERING</h4>
+              <div class="team-social-links text-center">
+                <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+
+
+              <img src="http://cdn.zenfolio.net/z/company/about/subha-left.en-US.jpg" class="img-responsive img-circle about-team">
+              <h4 class="text-center team-heading">Subha<br/>HEAD OF PRODUCT AND DESIGN</h4>
+              <div class="team-social-links text-center">
+                 <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                 <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                 <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <section id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="common-class">
+            <h1 class="text-center heading">Contact</h1>
+            <hr class="under-line"/>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="about-contact">
+             <h3 class="text-center">Where to Meet?</h3>
+             <h4 class="text-center">N-81, Barakhamba Road, Block N, Cannaught Place,
+                 Block N, Connaught Place, New Delhi, Delhi 110001</h4><br>
+             <h3 class="text-center">Get in Touch</h3>
+             <div class="text-center">
+               <a href="#" class="btn btn-info">contact us</a>
+             </div>
+           </div>
+         </div>
+
+          <div class="col-md-8">
+            <div id="googlemap">
+            </div>
+          </div>
+        </div>
+
+     </div>
+  </section>
+
+  <footer>
+    <section class="whole">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left">
+              <ul>
+                <li><a href="#"</a>Home</li>
+                <li><a href="#"</a>contact us</li>
+                <li><a href="#"</a>Features</li>
+                <li><a href="#"</a>Blog</li>
+                <li><a href="#"</a>Careers</li>
+                <li><a href="#"</a>Developers</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="right">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
+
+    <section class="bottom">
+      <div class="footer-text-center">
+        <p class="small"><span class="white">© 2017 Creative Ideas, Inc.</span> <br>
+          Photography Websites to Showcase, Proof and Sell your Photos Online.
+          We make it easy for everyone to create a beautiful, professional web presence.
+          The creative ideas builder has everything you need to create a fully personalized,
+          high-quality free website.
+          <a href="/terms">Terms of use</a>|
+          <a href="/privacy">privacy policy</a>|
+        </p>
+      </div>
+    </section>
+
+  </footer>
+
+  <script>
+     function initMap() {
+       var uluru = {lat: 28.631139, lng: 77.222053};
+       var map = new google.maps.Map(document.getElementById('googlemap'), {
+         zoom: 8,
+         center: uluru
+       });
+       var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+       });
+     }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQPU6IQlaCMz8TZ0YXW1CCznwGzWbe-QY&callback=initMap">
+   </script>
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
