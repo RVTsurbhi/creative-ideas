@@ -20,17 +20,19 @@
        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
      <![endif]-->
 <style>
-/*html,body
+html,body
 {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
-}*/
+
+}
 body
 {
   font-family: 'Carrois Gothic', sans-serif;
+  overflow-x: hidden;
+  padding-top: 45px;
 }
 #nature-image
 {
@@ -40,17 +42,17 @@ body
 
 .navbar{
   margin-bottom: 0px;
-  background-color: green;
+  background-color: #008000;
   border:none;
 }
 #mynavigationbar a
 {
-   color:black;
+   color:#FFEB3B;
    font-size:16px;
 }
 .navbar-default a.navbar-brand
 {
-  color:red;
+  color:#FF9800;
   font-size: 30px;
 }
 #home
@@ -74,25 +76,40 @@ body
 }
 #home h2
 {
-  color: rgb(243, 185, 38);
+  color: #e8ff00;
 }
   #home .under-line
   {
     width:35%;
     border: 2px solid rgb(212, 191, 118);
   }
-
+.heading
+{
+  color: #333;
+}
   .under-line
   {
-    width:50%;
-    border-top: 1px solid #d8b579
+    width:30%;
+    border-top: 2px solid #d8b579
+  }
+
+  .templates
+  {
+    text-align: center;
+    font-size:20px;
+    color:#080808;
+  }
+  .big
+  {
+    font-size: 30px;
+    color: #25aae2;
   }
  .paragraph
  {
-   color:#999;
+   color:#777;
    font-size: 20px;
    text-align:center;
-   padding:30px;
+   padding:20px;
  }
 
   .scroll-icon
@@ -120,10 +137,10 @@ body
 }
 .common-class
 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 #about img{
-  margin-bottom: 20px;
+  margin-bottom:20px;
 }
 .about-team
 {
@@ -132,10 +149,12 @@ body
   padding:10px;
   border:2px solid #e6a9a8;
 }
+
 .team-heading
 {
   margin-top:25px;
-  font-size: 15px;
+  font-size:15px;
+  color: #555;
 }
 
 .team-social-links a
@@ -149,27 +168,104 @@ body
 {
   color:#e44973;
 }
+.members
+{
+  font-size: 18px;
+  text-align: center;
+  color: #777;
+}
+.my-rounded-button
+{
+  border-radius:20px;
+  color:white;
+}
+.tools-element
+{
+  padding: 0px;
+}
+#tools img:hover
+{
+  opacity:0.8;
+}
+.about-tools h4
+{
+  text-align:justify;
+  font-size: 18px;
+}
+.about-tools p{
+  text-align:justify;
+  font-size: 16px;
+  color: #999;
+}
+#numbers .numbers p
+{
+  font-size: 20px;
+  color: #636262;
+}
+ .counting
+{
+  font-size: 30px;
+  color: #d65f5c;
+}
+
+.people p
+{
+  font-size: 18px;
+  color: #636262;
+}
+.about-contact h4
+{
+  color: #636262;
+}
 #googlemap
 {
   height:400px;
   width: 100%;
 }
+@media   (max-width:500px)
+  {
+    #home h1
+    {
+      font-size: 45px;
+    }
+    #home h2
+    {
+      font-size: 20px;
+    }
+    nav.navbar-default #mynavigationbar .navbar-creative-ideas
+    {
+      margin-left: -15px;
+    }
+    .team-social-links
+    {
+        margin-bottom: 20px;
+    }
+    .about-contact
+    {
+      margin-bottom: 25px;
+    }
+
+  }
 footer{
-  background:black;
-  margin-top:15px;
-  padding: 15px;
+  background:#454a52;
+  margin-top:25px;
+  padding:20px;
 }
 
-.whole, .bottom li
+.left li, .right li
 {
   display: inline-block;
 }
 
 .left li a, .right li a
 {
-  color: red;
-  font-size: 14px;
+  color:#c9e2ef;
+  font-size: 16px;
   padding: 10px;
+}
+.left li a:hover , .right li a:hover
+{
+  text-decoration: none;
 }
 .white
 {
@@ -178,7 +274,8 @@ footer{
 footer .small
 {
   color:white;
-  font-size: 15px;
+  text-align: center;
+  font-size: 14px;
 }
 </style>
 
@@ -200,13 +297,22 @@ footer .small
       </div>
 
       <div class="collapse navbar-collapse" id="mynavigationbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">about us</a></li>
-          <li><a href="#">what we do</a></li>
-          <li><a href="#">what people think</a></li>
-          <li><a href="#">meet our team</a></li>
-          <li><a href="#">numbers don't lie</a></li>
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="ABOUT US">About</a></li>
+          <li><a href="FEATURES">Features</a></li>
+          <li><a href="ALL THE TOOLS YOU NEED">Tools</a></li>
+          <li><a href="MEET OUR TEAM">Team</a></li>
+          <li><a href="NUMBER'S DON'T LIE">Numbers don't lie</a></li>
+          <li><a href="CONTACT">Contact</a></li>
         </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+           </ul>
+
       </div>
     </div>
   </nav>
@@ -231,28 +337,30 @@ footer .small
       <div class="container">
         <div class="row">
           <div class="common-class">
-          <h1 class="heading">About Us</h1>
-          <hr class="under-line">
-          <p class="paragraph">creative Ideas, a global technology company, has created the largest and most vibrant two-sided marketplace
-             for creative professionals to license content - including images, videos and music - as well as innovative tools
-              that power the creative process.
-          </p>
-        </div>
+
+               <h1 class="heading">ABOUT US</h1>
+               <hr class="under-line">
+               <p class="paragraph">creative Ideas, a global technology company, has created the largest and most vibrant two-sided marketplace
+                   for creative professionals to license content - including images, videos and music - as well as innovative tools
+                   that power the creative process.
+               </p>
+           </div>
+
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-xs-8">
             <img src="assets/images/MannaHill.jpg" class="img-responsive">
             <img src="assets/images/woman.jpg" class="img-responsive">
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-xs-8">
             <img src="assets/images/man.jpg" class="img-responsive">
             <img src="assets/images/australia.jpg" class="img-responsive">
             <img src="assets/images/livinglocal.jpg" class="img-responsive">
           </div>
 
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-xs-8">
             <img src="assets/images/5.jpg" class="img-responsive">
             <img src="assets/images/horse.jpg" class="img-responsive">
             <img src="assets/images/cape-leveque3.jpg" class="img-responsive">
@@ -262,40 +370,43 @@ footer .small
     </div>
   </section>
 
-    <section id="what we do">
+    <section id="Features">
       <div class="container">
         <div class="row">
           <div class="common-class">
-            <h1 class="heading">What we Do</h1>
-            <hr class="under-line">
-          </div>
+
+               <h1 class="heading">FEATURES</h1>
+               <hr class="under-line">
+
+           </div>
+
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-xs-6 text-center horizontal">
+              <div class="col-md-3 col-xs-10 text-center horizontal">
                 <i class="fa fa-picture-o fa-5x"></i>
-                <h3>Show</h3>
-                <p>Choose from our nine portfolio templates
+                <h3 class="big">Show</h3>
+                <p class="templates">Choose from our nine portfolio templates
                    & build your site in minutes - no coding required!</p>
               </div>
 
-              <div class="col-md-3 col-xs-6 text-center horizontal">
+              <div class="col-md-3 col-xs-10 text-center horizontal">
                  <i class="fa fa-shopping-cart fa-5x"></i>
-                <h3>Sell</h3>
-                <p>Use our built-in shopping cart &
+                <h3 class="big">Sell</h3>
+                <p class="templates">Use our built-in shopping cart &
                   partnerships with major print labs to earn more.</p>
               </div>
 
-              <div class="col-md-3 col-xs-6 text-center horizontal">
+              <div class="col-md-3 col-xs-10 text-center horizontal">
                 <i class="fa fa-paper-plane-o fa-5x"></i>
-                <h3>Deliver</h3>
-                <p>Send high res files, create private galleries,
+                <h3 class="big">Deliver</h3>
+                <p class="templates">Send high res files, create private galleries,
                   and post to social media from your site.</p>
               </div>
 
-              <div class="col-md-3 col-xs-6 text-center horizontal">
+              <div class="col-md-3 col-xs-10 text-center horizontal">
                 <i class="fa fa-folder-open fa-5x"></i>
-                <h3>Organise</h3>
-                <p>Upload your highest quality photos
+                <h3 class="big">Organise</h3>
+                <p class="templates">Upload your highest quality photos
                    to create a secure and searchable online archive.</p>
               </div>
             </div>
@@ -304,63 +415,88 @@ footer .small
       </div>
     </section>
 
-    <!-- <section id="freebies">
-      <div class="container">
-        <div class="row">
-          <h1 class="heading">Our Famous Freebies</h1>
-          <hr class="under-line">
 
-        </div>
-      </div>
-    </section> -->
-
-    <section id="ui tools">
-      <div class="container">
-        <div class="row">
-          <h1 class="heading">Our Premium UI Tools</h1>
-          <hr class="under-line">
-
-        </div>
-      </div>
-    </section>
-
-    <!-- <section id="what people think">
+    <section id="tools">
       <div class="container">
         <div class="row">
           <div class="common-class">
-             <h1 class="heading">What People Think</h1>
-             <hr class="under-line">
-          </div>
-
+            <div class="col-xs-10">
+               <h1 class="heading">ALL THE TOOLS YOU NEED</h1>
+               <hr class="under-line">
+            </div>
           </div>
         </div>
-    </section> -->
+
+      <div class="row">
+        <div class="col-md-9 col-xs-12">
+          <div class="tools-element">
+            <img src="http://crispylogs.com/wp-content/uploads/2015/12/earn-money-by-selling-photographers.jpg" class="img-responsive">
+          </div>
+        </div>
+
+        <div class="col-md-3 col-xs-8">
+          <div class="about-tools">
+            <h4>Easy SEO</h4>
+            <p>make sure people can find you on search engines like google</p>
+
+            <h4>Tons of Storage</h4>
+            <p>upload worry free-you have tons of storage space.</p>
+
+            <h4>Custom Domain</h4>
+            <p>give your website a memorable custom domain.</p>
+
+            <h4>Sell your Photos Online</h4>
+            <p>create an online store and sell your photos online.</p>
+
+            <h4>Creative Photos Albums</h4>
+            <p>create stunning album sites especially for your clients.</p>
+
+            <h4>App Market</h4>
+            <p>with 200+ apps, you can grow in ways you never imagined.</p>
+
+            <h4>Advanced Image Quality</h4>
+            <p>easily control exactly how your photos look online.</p>
+
+            <a href="#" target="_blank" class="btn btn-primary my-rounded-button">GET STARTED</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 
     <section id="Team">
       <div class="container">
         <div class="row">
           <div class="common-class">
-            <h1 class="heading">Meet The Team</h1>
-            <hr class="under-line">
-            <p class="text-center">A TRUSTED, EXPERIENCED TEAM<br/>
-                 Zenfolio is part of the Art.com Inc. family of brands. Together, we’re making art accessible to all by transforming the way the world discovers,
-                 personalizes, shares and purchases art. Though our team at Zenfolio has many years of experience developing web and desktop software, it’s our
-                 shared commitment to photography and delivering the premier photo website service that binds us together. That, and our daily ritual of having
-                 coffee together, just like we did in the beginning.</p>
-         </div>
+
+                <h1 class="heading">MEET THE TEAM</h1>
+                <hr class="under-line">
+                <div class="col-xs-12">
+
+                   <p class="members">A TRUSTED, EXPERIENCED TEAM<br/>
+                   Zenfolio is part of the Art.com Inc. family of brands. Together, we’re making art accessible to all by transforming the way the world discovers,
+                   personalizes, shares and purchases art. Though our team at Zenfolio has many years of experience developing web and desktop software, it’s our
+                   shared commitment to photography and delivering the premier photo website service that binds us together. That, and our daily ritual of having
+                   coffee together, just like we did in the beginning.</p>
+              </div>
+           </div>
 
          <div class="container">
            <div class="row">
-             <div class="col-md-4 col-xs-8">
+             <div class="col-md-4 col-xs-10">
 
                <img src="http://cdn.zenfolio.net/z/company/about/arnaud-left.en-US.jpg" class="img-responsive img-circle about-team">
                <h4 class="text-center team-heading">Arnaud<br/>GENERAL MANAGER</h4>
                <div class="team-social-links text-center">
                  <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
                  <a href="http://google.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                 <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
               </div>
 
-               <img src="http://cdn.zenfolio.net/z/company/about/arnaud-left.en-US.jpg" class="img-responsive img-circle about-team">
+               <img src="http://cdn.zenfolio.net/z/company/about/arnaudC-left.en-US.jpg" class="img-responsive img-circle about-team">
                <h4 class="text-center team-heading">Arnaud<br/>GENERAL MANAGER</h4>
                <div class="team-social-links text-center">
                  <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -369,13 +505,14 @@ footer .small
                </div>
              </div>
 
-             <div class="col-md-4 col-xs-8">
+             <div class="col-md-4 col-xs-10">
 
                <img src="http://cdn.zenfolio.net/z/company/about/Amber-left.en-US.jpg" class="img-responsive img-circle about-team">
                <h4 class="text-center team-heading">Amber<br/>VP OF GROWTH</h4>
                <div class="team-social-links text-center">
                  <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
                  <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                 <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
                </div>
 
 
@@ -384,17 +521,19 @@ footer .small
                <div class="team-social-links text-center">
                   <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="http://google.com" target="_blank"><i class="fa fa-instagram"></i></a>
                </div>
              </div>
 
 
-            <div class="col-md-4 col-xs-8">
+            <div class="col-md-4 col-xs-10">
 
               <img src="http://cdn.zenfolio.net/z/company/about/Nadav-left.en-US.jpg" class="img-responsive img-circle about-team">
               <h4 class="text-center team-heading">Nadav<br/>VP OF ENGINEERING</h4>
               <div class="team-social-links text-center">
                 <a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="http://google.com" target="_blank"><i class="fa fa-instagram"></i></a>
             </div>
 
 
@@ -414,17 +553,68 @@ footer .small
     </div>
   </section>
 
+
+ <section id="numbers">
+    <div class="container">
+      <div class="row">
+        <div class="common-class">
+
+              <h1 class="text-center heading">NUMBER'S DON'T LIE</h1>
+              <hr class="under-line"/>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6 col-xs-10">
+            <div class="people">
+              <h2 class="heading">Want your work seen by millions of people?</h2>
+              <p class="text-center">creative ideas is looking for stunning photos to use in our new templets.</br>
+                      sign up now-we'd love to do business with you!</p>
+              <div class="text-center">
+                <a href="#" target="_blank"class="btn btn-warning">Sign up Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-10">
+            <div class="numbers">
+               <h2>Users</h2>
+               <p>Business and professionals</p>
+               <div class="counting">
+                 118.000+
+               </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-10">
+            <div class="numbers">
+              <h2>Countries</h2>
+              <p>where we made sponsorships</p>
+              <div class="counting">
+                   25
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+
     <section id="Contact">
       <div class="container">
         <div class="row">
           <div class="common-class">
-            <h1 class="text-center heading">Contact</h1>
-            <hr class="under-line"/>
-         </div>
-      </div>
+
+               <h1 class="text-center heading">CONTACT</h1>
+               <hr class="under-line"/>
+            </div>
+          </div>
+
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-10">
           <div class="about-contact">
              <h3 class="text-center">Where to Meet?</h3>
              <h4 class="text-center">N-81, Barakhamba Road, Block N, Cannaught Place,
@@ -436,7 +626,7 @@ footer .small
            </div>
          </div>
 
-          <div class="col-md-8">
+          <div class="col-md-8 col-xs-12">
             <div id="googlemap">
             </div>
           </div>
@@ -446,10 +636,10 @@ footer .small
   </section>
 
   <footer>
-    <section class="whole">
+
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-xs-12">
             <div class="left">
               <ul>
                 <li><a href="#"</a>Home</li>
@@ -457,41 +647,43 @@ footer .small
                 <li><a href="#"</a>Features</li>
                 <li><a href="#"</a>Blog</li>
                 <li><a href="#"</a>Careers</li>
-                <li><a href="#"</a>Developers</li>
+
 
               </ul>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-xs-12">
             <div class="right">
               <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://google.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="http://youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="http://google.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
               </ul>
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
 
-    <section class="bottom">
-      <div class="footer-text-center">
-        <p class="small"><span class="white">© 2017 Creative Ideas, Inc.</span> <br>
-          Photography Websites to Showcase, Proof and Sell your Photos Online.
-          We make it easy for everyone to create a beautiful, professional web presence.
-          The creative ideas builder has everything you need to create a fully personalized,
-          high-quality free website.
-          <a href="/terms">Terms of use</a>|
-          <a href="/privacy">privacy policy</a>|
-        </p>
-      </div>
-    </section>
+
+
+   <div class="col-xs-12">
+
+        <div class="footer-text-center">
+           <p class="small"><span class="white">&copy; copyright 2017 Creative Ideas, Inc.</span> <br>
+              Photography Websites to Showcase, Proof and Sell your Photos Online.
+              We make it easy for everyone to create a beautiful, professional web presence.
+              The creative ideas builder has everything you need to create a fully personalized,
+              high-quality free website.
+             <a href="/terms">Terms of use</a>|
+             <a href="/privacy">privacy policy</a>|
+          </p>
+        </div>
+     </div>
+   </div>
+ </div>
 
   </footer>
 
